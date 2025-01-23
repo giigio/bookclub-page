@@ -28,11 +28,14 @@
   --text-label: #bac6c9;
 
   --ff-base: "Raleway", serif;
+
   --title-lg: 700 3rem /1.2 var(--ff-base);
   --title-md: 700 2.5rem/1.2 var(--ff-base);
   --title-sm: 700 2rem/1.2 var(--ff-base);
   --title-xs: 700 1rem/1.2 var(--ff-base);
-  --subtitle: 500 2rem/2 var(--ff-base);
+
+  --subtitle: 400 2rem/2 var(--ff-base);
+
   --body-lg: 400 1.25rem/1.4 var(--ff-base);
   --body-md: 400 1rem/1.4 var(--ff-base);
   --body-sm: 400 0.875rem/1.4 var(--ff-base);
@@ -55,13 +58,26 @@ h1 {
   font: var(--title-lg);
 }
 
+h2 {
+  font: var(--subtitle);
+}
+
 p {
   font: var(--body-lg);
+}
+
+span {
+  color: var(--blue-light);
+  font-weight: 700;
 }
 
 @media (width <= 60em) {
   h1 {
     font-size: 1.75rem;
+  }
+
+  h2 {
+    font: var(--body-md);
   }
 
   p {

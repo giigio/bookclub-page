@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: 1rem;
 }

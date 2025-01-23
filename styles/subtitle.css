@@ -1,0 +1,54 @@
+section.subtitle {
+  text-align: center;
+
+  margin-inline: auto;
+
+  height: 36rem;
+  align-content: center;
+
+  & div.flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & img {
+    height: 5rem;
+    width: 5rem;
+
+    &[src*="spellbook"] {
+      transform: rotate(20.758deg);
+    }
+
+    &[src*="crystal"] {
+      transform: rotate(-14.483deg);
+    }
+
+    &[src*="ouija"] {
+      transform: rotate(99.47deg);
+      left: 9.6rem;
+    }
+  }
+}
+
+@media (width<= 60em) {
+  section.subtitle {
+    max-width: 21rem;
+    height: 16rem;
+
+    & img {
+      height: 2.5rem;
+      width: 2.5rem;
+
+      &[src*="spellbook"] {
+        left: 70%;
+        top: 25%;
+      }
+    }
+  }
+}
+
+@media (width>= 60em) {
+  section.subtitle {
+    max-width: 78rem;
+  }
+}
